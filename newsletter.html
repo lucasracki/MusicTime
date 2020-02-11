@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Assine nossa Newsletter!</title>
+  <link rel="icon" type="image/jpg" href="media/compact-disc2.png" />
+
+  <!-- Bootstrap  CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- CSS local -->
+  <link rel="stylesheet" href="css/style.css" >
+
+  <script src="https://kit.fontawesome.com/be58be0e2b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <img src="media/compact-disc(1).svg" width="40px" height="40px"  class="d-inline-block align-top" alt="Logo">
+    <a class="navbar-brand"></a>
+    <a class="navbar-brand" href="index.html">Music Time</a>
+    <a class="navbar-brand"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-home"></i>
+            Início
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-newspaper"></i>
+            Notícias
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">
+            <i class="fas fa-address-card"></i>
+            Contato
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html">
+            <i class="fas fa-info"></i>
+            Sobre
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="btn btn-warning my-2 my-sm-0" href="newsletter.html" role="button">
+            <i class="far fa-newspaper"></i>
+            Assine nossa Newsletter!</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-8">
+
+      <h1 class="mt-4">Preencha os campos para receber nossas novidades!</h1>
+      <hr>
+
+      <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom01">Primeiro nome</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" required>
+            <div class="valid-feedback">
+              Tudo certo!
+            </div>
+            <div class="invalid-feedback">
+              Por favor, insira seu primeiro nome.
+            </div>
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="validationCustom02">Sobrenome</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome"  required>
+            <div class="valid-feedback">
+              Tudo certo!
+            </div>
+            <div class="invalid-feedback">
+              Por favor,insira seu sobrenome.
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="validationCustom03">E-mail</label>
+            <input type="email" class="form-control" id="validationCustom03" placeholder="E-mail" required>
+            <div class="valid-feedback">
+              Tudo certo!
+            </div>
+            <div class="invalid-feedback">
+              Por favor, informe um e-mail válido.
+            </div>
+          </div>
+
+
+        </div>
+        <hr>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Concordo com os termos e condições
+            </label>
+            <div class="invalid-feedback">
+              Você deve concordar, antes de continuar.
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </form>
+
+      <script>
+        // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+            var forms = document.getElementsByClassName('needs-validation');
+            // Faz um loop neles e evita o envio
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+      </script>
+
+    </div>
+
+      <div class="col-md-4">
+
+          <div class="card my-4">
+              <h5 class="card-header">Pesquisar</h5>
+              <div class="card-body">
+                  <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Pesquisar por...">
+                      <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">Ir !</button>
+              </span>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="card my-4 card-header">
+              <h5 class="lead">Confira as músicas que estão no Top 50 Global do Spotify!</h5>
+              <div class="embed-responsive embed-responsive-16by9 rounded">
+                  <iframe class="embed-responsive-item" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+              </div>
+              <hr>
+              <h5 class="lead">Confira as músicas que estão no Top 50 Brasil do Spotify!</h5>
+              <div class="embed-responsive embed-responsive-16by9 rounded">
+                  <iframe class="embed-responsive-item" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMXbN3EUUhlg" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+</div>
+
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">
+      <img src="media/compact-disc(1).svg" width="40px" height="40px"  class="d-inline-block align-center" alt="Logo">
+      Copyright &copy; Music Time 2019
+    </p>
+  </div>
+</footer>
+
+<!-- JavaScript (Opcional) -->
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
